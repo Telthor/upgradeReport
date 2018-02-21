@@ -1,0 +1,4 @@
+pdflatex QuantumAnnealingReport
+pdflatex QuantumAnnealingReport
+bibtex QuantumAnnealingReport
+pdflatex QuantumAnnealingReport

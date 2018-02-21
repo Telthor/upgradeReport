@@ -1,0 +1,91 @@
+\documentclass[a4paper]{report}
+%-----------------------------------
+%% Sync Bibliography from Mendeley Generated
+\immediate\write18{./scripts/sync_bibliography.sh}
+%-----------------------------------
+% Math e an i
+\newcommand{\mathe}{\ensuremath{\mathrm{e}}}
+\newcommand{\mathi}{\ensuremath{\mathrm{i}}}
+\usepackage{textgreek}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\newcommand{\transpose}[1]{\ensuremath{#1}^{\mathsf{T}}}
+%-----------------------------------
+% Theorems and stuff
+\usepackage{amssymb} %maths
+\usepackage{amsmath} %maths
+\usepackage{amsthm}
+\theoremstyle{plain}% default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem*{cor}{Corollary}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{xca}[exmp]{Exercise}
+\newtheorem{problem}{Problem}[section]
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem*{note}{Note}
+%-----------------------------------
+\usepackage{hyperref}
+\usepackage{graphicx}% Include figure files
+\graphicspath{{./Figures/}}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{stackengine}
+\usepackage{xcolor}%
+\usepackage{algpseudocode,algorithm,algorithmicx}
+%------------------------------------
+\usepackage{tensor}
+\usepackage{physics}
+\usepackage{complexity}
+\renewcommand{\poly}{\ensuremath\text{poly}}
+\usepackage[separate-uncertainty=true]{siunitx}
+\usepackage{dsfont}
+\usepackage{pgfplots}
+%------------------------------------
+%\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\usepackage[margin=1.25in,includefoot]{geometry}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{hhline}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{fancyhdr}
+%------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[nottoc]{tocbibind}
+\renewcommand\bibname{References}
+\renewcommand{\baselinestretch}{1.25}
+%------------------------------------
+\begin{document}
+\input{titlepage.tex}
+\pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
+\fancyhead{} % clear all header fields
+\fancyhead[RO,LE]{\thepage} % Odd and Even page numbering
+\fancyhead[LO]{\slshape\rightmark}
+\cfoot{}
+\makeatletter
+%\renewcommand{\chaptermark}[1]{%
+%  \markboth{}{\MakeUppercase{%
+%    \ifnum\c@secnumdepth>\m@ne \@chapapp \ \thechapter. \ \fi #1}}%
+%}
+% if you don't want the word `Chapter', use the following
+\renewcommand{\chaptermark}[1]{%
+  \markboth{}{\MakeUppercase{%
+    \ifnum\c@secnumdepth>\m@ne \thechapter. \ \fi #1}}%
+}
+\makeatother
+\begin{abstract}
+    \input{Text_Files/abstract.tex}
+\end{abstract}
+\tableofcontents
+\input{Main_Text.tex}
+\bibliographystyle{nicebib}
+\bibliography{library.bib}
+\end{document}
