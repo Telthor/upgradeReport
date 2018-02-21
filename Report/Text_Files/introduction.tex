@@ -2,27 +2,29 @@
 
 \chapter{Introduction}
 
-Quantum computing has been an active field of research since the concept was first suggested by Richard Feynman in the early 1980s \cite{Feynman1982}. 
+Quantum computing has been an active field of research since the concept was first suggested by Richard Feynman in the early 1980s \cite{Feynman1982}.
 Originally proposed as an efficient method for simulating chemical processes (something that traditional computers find extremely taxing) the discovery of several algorithms offering significant speed increases over classical computers has further fueLled research \cite{Shor1994,Shor1997}.
-Strong initial scepticism abounded regarding the potential for quantum computers to exist in the real world, primarily due to the concerns that error correction with such a complex device would be impossible\cite{Preskill1997}. 
-This pessimism gave way with the identification of an error threshold for quantum computation. 
+Strong initial scepticism abounded regarding the potential for quantum computers to exist in the real world, primarily due to the concerns that error correction with such a complex device would be impossible\cite{Preskill1997}.
+This pessimism gave way with the identification of an error threshold for quantum computation.
 Given an error rate below a critical threshold it was possible to perform an arbitrarily long computation with negligible possibility of significant error \cite{Shor1996,Aharonov1997}.
-Following these discoveries serious attention has been given to the development of error correcting codes that might be implemented to allow a physical quantum computer to be \emph{fault tolerant}. 
+Following these discoveries serious attention has been given to the development of error correcting codes that might be implemented to allow a physical quantum computer to be \emph{fault tolerant}.
 \\
-Gottesman identified the class of error correcting codes known as \emph{stabilizer codes}, where codes are defined by the group of logical operators that leave the code unchanged \cite{Gottesman1997a}. 
-This class of quantum error correcting codes have become the dominant form in theoretical research. 
-Of these one in particular has become the focus of much of the ongoing research of quantum computing, \emph{the surface code}, developed by Bravyi and Kitaev \cite{Bravyi1998}. 
-Although other quantum error correcting codes (such as colour codes \cite{Vasmer2018}) exist, the surface code has become the focus for experimental implementations. This is due mainly to the relatively high error threshold that it is able to tolerate, $\sim0.5\%$, and the simple architecture of a planar grid of qubits. 
+Gottesman identified the class of error correcting codes known as \emph{stabilizer codes}, where codes are defined by the group of logical operators that leave the code unchanged \cite{Gottesman1997a}.
+This class of quantum error correcting codes have become the dominant form in theoretical research.
+Of these one in particular has become the focus of much of the ongoing research of quantum computing, \emph{the surface code}, developed by Bravyi and Kitaev \cite{Bravyi1998}.
+Although other quantum error correcting codes (such as colour codes \cite{Vasmer2018}) exist, the surface code has become the focus for experimental implementations. This is due mainly to the relatively high error threshold that it is able to tolerate, $\sim0.5\%$, and the simple architecture of a planar grid of qubits.
 \\
-In recent years there has been rapid progress in the development of physical qubits. 
-Groups in both the academic and private sectors have shown small numbers of qubits functioning with error rates above the fault tolerant threshold \cite{Barends2015,Reagor2017}.  
-The successful recent approaches have tended to focus on superconducting circuits to produce their qubits. 
+In recent years there has been rapid progress in the development of physical qubits.
+Groups in both the academic and private sectors have shown small numbers of qubits functioning with error rates above the fault tolerant threshold \cite{Barends2015,Reagor2017}.
+The successful recent approaches have tended to focus on superconducting circuits to produce their qubits.
 Whilst these have proved excellent for the small numbers of qubits currently in use, it is likely that they will present significant additional challenges when scaling to numbers sufficient for useful, fault-tolerant quantum computation.
 With the numbers required likely to be close to $100 \times 10^6$ and the current size of these qubits close to 1mm$^2$, it will likely be impossible to use these qubits in their current form in a fault-tolerant quantum computer.
 \\
-Although there are many alternative systems that could provide a qubit, this paper will focus on the use of the spins of nuclei and electrons bound to donors in semiconductors, particularly silicon. 
-A seminal paper by Kane \cite{Kane1998} stimulated much of the research interest in this field. 
-He proposed using the spin of phosphorus nuclei in silicon as qubits with the ability to mediate interactions between neighbouring donor nuclei using the interaction between the electrons bound to each. 
+Although there are many alternative systems that could provide a qubit, this paper will focus on the use of the spins of nuclei and electrons bound to donors in semiconductors, particularly silicon.
+A seminal paper by Kane \cite{Kane1998} stimulated much of the research interest in this field.
+He proposed using the spin of phosphorus nuclei in silicon as qubits with the ability to mediate interactions between neighbouring donor nuclei using the interaction between the electrons bound to each.
 This paper has been significant in driving the field of solid state quantum computing forward.
-More recent approaches have focussed on how such an architecture, based on donors in silicon, could be designed with the surface code in mind. 
+More recent approaches have focussed on how such an architecture, based on donors in silicon, could be designed with the surface code in mind.
+One such proposal is from O'Gormann et al \cite{OGorman2014}. 
+
 

@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Thesis.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: titlepage.aux
+A level-1 auxiliary file: Sources/Abstract.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Thesis-blx.bib
+Database file #2: library.bib
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 13 entries,
+            6268 wiz_defined-function locations,
+            1323 strings with 24751 characters,
+and the built_in function-call counts, 133249 in all, are:
+= -- 10611
+> -- 1740
+< -- 301
++ -- 4571
+- -- 874
+* -- 10561
+:= -- 16551
+add.period$ -- 0
+call.type$ -- 13
+change.case$ -- 113
+chr.to.int$ -- 30
+cite$ -- 24
+duplicate$ -- 15313
+empty$ -- 11087
+format.name$ -- 1522
+if$ -- 24905
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 0
+newline$ -- 971
+num.names$ -- 498
+pop$ -- 4788
+preamble$ -- 1
+purify$ -- 308
+quote$ -- 0
+skip$ -- 2308
+stack$ -- 0
+substring$ -- 19021
+swap$ -- 3087
+text.length$ -- 398
+text.prefix$ -- 12
+top$ -- 1
+type$ -- 430
+warning$ -- 0
+while$ -- 2225
+width$ -- 0
+write$ -- 959

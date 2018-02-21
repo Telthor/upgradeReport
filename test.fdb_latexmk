@@ -1,0 +1,29 @@
+# Fdb version 3
+["bibtex test"] 1519229206 "test.aux" "test.bbl" "test" 1519229206
+  "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/plain.bst" 1480098433 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "test.aux" 1519229206 92 c49dae3f25579e0423311e9d0cc8928c ""
+  "test.bib" 1519228574 812 2ea9748e3b30b304acb47e49a3afc508 ""
+  (generated)
+  "test.blg"
+  "test.bbl"
+["pdflatex"] 1519229206 "test.tex" "test.pdf" "test" 1519229206
+  "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1480098701 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1480098701 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1480098733 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1480098733 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls" 1480098821 19821 310da678527a7dfe2a02c88af38079b7 ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo" 1480098821 8292 e897c12e1e886ce77fe26afc5d470886 ""
+  "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1518824182 33095 db9a077a3f94a5d0b580d566a7906714 ""
+  "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1519146870 2700807 0206fedd56a7eeca19bae04ec8aac4f6 ""
+  "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1519146914 4131493 6f8f3fb0926a46234c7318951b5dabc7 ""
+  "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "test.aux" 1519229206 92 c49dae3f25579e0423311e9d0cc8928c ""
+  "test.bbl" 1519229206 404 2a6435822ebaae671eb11e3da38bb631 "bibtex test"
+  "test.tex" 1519229202 133 cfd7f3136ede12adb28371a214b76101 ""
+  (generated)
+  "test.aux"
+  "test.log"
+  "test.pdf"

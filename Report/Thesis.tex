@@ -63,8 +63,8 @@
   style        = numeric,
   ]{biblatex}
 
-\input{bibliography-mimosis}
-\bibliography{library}
+% \input{bibliography-mimosis}
+% \bibliography{library.bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts
@@ -78,23 +78,6 @@
   \singlespacing
 \fi
 
-\renewcommand{\th}{\textsuperscript{\textup{th}}\xspace}
-
-\newacronym[description={Principal component analysis}]{PCA}{PCA}{principal component analysis}
-\newacronym                                            {SNF}{SNF}{Smith normal form}
-\newacronym[description={Topological data analysis}]   {TDA}{TDA}{topological data analysis}
-
-\newglossaryentry{LaTeX}{%
-  name        = {\LaTeX},
-  description = {A document preparation system},
-  sort        = {LaTeX},
-}
-
-\newglossaryentry{Real numbers}{%
-  name        = {$\real$},
-  description = {The set of real numbers},
-  sort        = {Real numbers},
-}
 
 \makeindex
 \makeglossaries
@@ -103,7 +86,7 @@
 % Incipit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\bibliography{library.bib}
 \begin{document}
 
 \frontmatter
@@ -113,6 +96,8 @@
   \tableofcontents
 
 \mainmatter
+\chapter{Test}
+One fine morning, donald duck was walking down the road \cite{}
 
   \input{Main_Text.tex}
 
@@ -121,13 +106,13 @@
 \bookmarksetup{startatroot}
 \backmatter
 
-  \begingroup
-    \let\clearpage\relax
-    \glsaddall
-    \printglossary[type=\acronymtype]
-    \newpage
-    \printglossary
-  \endgroup
+  % \begingroup
+  %   \let\clearpage\relax
+  %   \glsaddall
+  %   \printglossary[type=\acronymtype]
+  %   \newpage
+  %   \printglossary
+  % \endgroup
   \printindex
   \printbibliography
 \end{document}
