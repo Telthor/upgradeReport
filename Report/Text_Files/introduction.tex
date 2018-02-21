@@ -23,8 +23,22 @@ With the numbers required likely to be close to $100 \times 10^6$ and the curren
 Although there are many alternative systems that could provide a qubit, this paper will focus on the use of the spins of nuclei and electrons bound to donors in semiconductors, particularly silicon.
 A seminal paper by Kane \cite{Kane1998} stimulated much of the research interest in this field.
 He proposed using the spin of phosphorus nuclei in silicon as qubits with the ability to mediate interactions between neighbouring donor nuclei using the interaction between the electrons bound to each.
-This paper has been significant in driving the field of solid state quantum computing forward.
-More recent approaches have focussed on how such an architecture, based on donors in silicon, could be designed with the surface code in mind.
+These types of qubit are attractive due to their exceptionally long coherence times, the time that the qubit reliably stores quantum information for. 
+A long coherence time relative to qubit gate times is essential, as this determines the error rate of the qubits.
+Coherence times as long as several seconds have been reported for donor spin qubits in silicon, whilst gate times can be as low as several nanoseconds \cite{Wolfowicz2013}. 
+Despite these advantages, development of these types of qubits for quantum computers has lagged behind the superconducting and ion trap versions \cite{Ballance2015}. 
+This is due to the difficulty of isolating and addressing single donors in a silicon lattice. 
+Kane's proposal required sub nano-metre precision in qubit placement to facilitate inter-qubit interactions. 
+Even if this precision were achieved there remains the issue of how the requisite control circuitry could be integrated into such a dense design.
+This has lead to the development of more modern proposals to both overcome these difficulties and also to implement surface code based error correction.
 One such proposal is from O'Gormann et al \cite{OGorman2014}. 
+This proposal takes a similar approach to Kane, with qubits being donor spins in a silicon lattice. 
+Where it differs significantly is in its use of two lattices of qubits. 
+One of these is for the storage of data, whilst the other performs measurements on these data qubits. 
+
+
+\begin{equation}
+\hat{H} = \mu_bBg_eS_z + \mu_ng_nBI_z + A \hat{S}\cdot\hat{I}
+\end{equation}
 
 
