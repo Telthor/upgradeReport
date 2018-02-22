@@ -31,11 +31,32 @@ This is due to the difficulty of isolating and addressing single donors in a sil
 Kane's proposal required sub nano-metre precision in qubit placement to facilitate inter-qubit interactions. 
 Even if this precision were achieved there remains the issue of how the requisite control circuitry could be integrated into such a dense design.
 This has lead to the development of more modern proposals to both overcome these difficulties and also to implement surface code based error correction.
+\\
+\\
 One such proposal is from O'Gormann et al \cite{OGorman2014}. 
 This proposal takes a similar approach to Kane, with qubits being donor spins in a silicon lattice. 
 Where it differs significantly is in its use of two lattices of qubits. 
 One of these is for the storage of data, whilst the other performs measurements on these data qubits. 
-
+This measurement stage is placed above the data stage and held close, within 40nm, and moved in a repeating cycle over the data qubits.
+This allows each measurement qubit to perform $\hat{X}$ or $\hat{Z}$ measurement on groups of four data qubits, the stabilizer measurements that make up the fundamental units of surface code.
+This architecture allows for data qubits to be placed much farther apart - since no direct interaction between them is required.
+Several key research questions remain:
+\begin{enumerate}
+	\item{What donor species should be used for both types of qubit?}
+	\item{How are the measurement qubits to be read out?}
+	\item{How are the qubits to be controlled?}
+\end{enumerate}
+Whilst donors in silicon make excellent choices for the data qubits due to the properties stated above, a different qubit species is required for the measurement qubits to avoid an unwanted exchange interaction between the two lattices.
+Optical qubit readout is suggested in the proposal by O'Gormann et al and is a well studied means of reading the state of spin qubits, particularly in nitrogen-vacancy (NV) centres in diamond \cite{Liu2017}.
+A concern with optical readout is the impact that illumination can have on the coherence times of donors in silicon. 
+Silicon has a band gap energy equivalent to approximately 1058nm or photon energy of 1.17eV. 
+Illumination at shorter wavelengths than this will create free electrons in the silicon conduction band.
+These can scatter off the electrons bound to donors, causing them to relax and shortening the $T_1$ time of the qubits as a whole \cite{Ross2017}.  
+NV centres are read out at between 500nm and 600nm, illumination that would reduce data qubit coherence times and increase the qubit error rate. 
+Alternative optically addressed spin qubits at higher wavelengths exist, such as the di-vacancy centre in silicon carbide \cite{Christle2014}, but a vital question is what wavelengths can be used for read-out without compromising data qubit coherence times.
+This report addresses this question by examining the effect of various laser wavelengths close to the silicon band gap on the coherence times of electrons bound to phosphorus donors in silicon.
+\\
+Another key question presented by the O'Gormann proposal is how to control the 
 
 \begin{equation}
 \hat{H} = \mu_bBg_eS_z + \mu_ng_nBI_z + A \hat{S}\cdot\hat{I}
