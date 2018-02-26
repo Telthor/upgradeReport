@@ -40,6 +40,7 @@
 \usepackage{bookmark}
 \usepackage{braket}
 \usepackage{epigraph}
+\usepackage{changepage}
 \usepackage[utf8]{inputenc}
 \DeclareUnicodeCharacter{2217}{*}
 
@@ -72,9 +73,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifxetexorluatex
-  \setmainfont{Minion Pro}
+  % \setmainfont{Minion Pro}
+  \doublespacing
 \else
   \usepackage[lf]{ebgaramond}
+  % \usepackage{tgadventor}
   \usepackage[oldstyle,scale=0.7]{sourcecodepro}
   \singlespacing
 \fi
@@ -86,7 +89,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Incipit
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \bibliography{library.bib}
 \begin{document}
 
@@ -95,8 +97,10 @@
   \include{Sources/Abstract}
 
   \tableofcontents
+  \listoffigures
 
 \mainmatter
+\setstretch{1.2}
   \input{Main_Text.tex}
 
 % This ensures that the subsequent sections are being included as root
@@ -111,6 +115,7 @@
   %   \newpage
   %   \printglossary
   % \endgroup
+  \singlespacing
   \printindex
   \printbibliography
 \end{document}
