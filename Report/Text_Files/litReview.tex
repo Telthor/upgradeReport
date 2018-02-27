@@ -1,0 +1,89 @@
+% !TEX root = ../Thesis.tex
+
+\chapter{Literature Review}
+\label{chap:litRev}
+
+Having introduced the background theory to the work discussed in this report, I turn to a more detailed examination of the literature surrounding this work.
+I begin with the various relaxation and decoherence processes for spins bound to donors in silicon.
+First discussing the mechanisms by which these processes occur I shall then move on to the effect of illumination on these mechanisms.
+Following this I shall move on the the stark shift of donor spins in silicon, including a brief introduction to the principle before an examination of previous work performed to characterise this effect in the various species of donor in silicon.
+
+\section{Illumination induced Decoherence}
+
+\subsection{Mechanisms of Relaxation and Decoherence}
+
+The concept of $T_1, T_2$ and $T_2^*$ time was introduced in section \ref{sec:relProc} as the characteristic relaxation, decoherence and dephasing respectively. 
+I shall now focus on the established mechanisms by which these occur, looking mainly at relaxation and decoherence as these represent a permanent loss of information.
+
+\subsubsection{Relaxation}
+
+The relaxation time, $T_1$, determines the rate at which the polarisation of an ensemble of spins returns to Boltzmann equilibrium after being disturbed.
+The first method of relaxation that should be considered is spontaneous emission: the emission of a photon into free space as the spin relaxes from excited to ground state. 
+For a magnetic dipole this rate is slow in normal circumstances - thousands of seconds or more \cite{schweiger2001principles,Baranov2017}. 
+Given that above millikelvin temperatures the rate of transverse relaxation for donor spins in silicon is significantly greater than this it can be neglected as a dominant mechanism.
+\\
+Spin-lattice relaxation occurs instead via the interaction with of the spin system with vibrations in the silicon lattice - phonons. 
+There are three different phonon-mediated processes that affect the relaxation rate of spin systems with transition frequency $\omega_s$, all of which are well described in a 1961 paper by Orbach \cite{VanVleck1940,Orbach1961}.
+\\
+\textbf{Direct Process}
+\\
+\noindent\rule{\columnwidth}{1pt}
+\begin{adjustwidth}{1.5cm}{}
+The first of these is a \textbf{direct process}, whereby a single phonon with frequency equal to that of the spin transition (as given by equation \ref{eq:spinHam}) is emitted into the lattice. 
+This rate ($\propto 1/T_1$) is proportional to the phonon density at $\omega_s$ and varies with spin transition frequency and temperature as: $\omega_s^4T^{-1}$.
+\par
+\par
+\end{adjustwidth}
+\textbf{Raman Process}
+\par\noindent\rule{\columnwidth}{1pt}
+\begin{adjustwidth}{1.5cm}{}
+Whilst this rate dominates at lower temperatures, $<10$k, at temperatures with $k_BT \gg \hslash\omega_s$, a two phonon Raman transition becomes more efficient.
+As the maximum phonon density is at much higher frequencies than $\omega_s$, the spin first absorbs a phonon at $\omega_{\text{max}}$ before emitting a phonon with $\omega = \omega_{\text{max}} + \omega_s$. 
+This corresponds to the spin transitioning to a virtual energy level before rapidly transitioning back to the spin ground state.
+For non-integer spin systems the rate due to this effect scales with temperature as: $T^{7}$.
+\end{adjustwidth}
+\textbf{Orbach Process}
+\\
+\noindent\rule{\columnwidth}{1pt}
+\begin{adjustwidth}{1.5cm}{}
+The Raman process involves a virtual energy level so is an inherently off-resonant effect. 
+It is possible for the spin to transition to an actual excited state during the two phonon process. 
+This is known as an Orbach process and is more efficient than either process above. 
+It scales with temperature as: $\exp\left({-\Delta E/K_BT}\right)-1$.
+\end{adjustwidth}
+
+\subsubsection{Decoherence}
+
+At high temperatures the spin-lattice relaxation rate tends to be the dominant process for spins in silicon.
+However, at temperatures below $\approx 10$k other factors become limiting. 
+In particular the decoherence or $T_2$ time becomes important. 
+This is the process by which the spins lose phase coherence irreversibly. 
+There are several mechanisms that contribute to $T_2$, detailed here.
+\\
+\textbf{Spectral Diffusion}
+\\
+The first of these is spectral diffusion and its impact is largely dependent on the sample used.
+In natural silicon samples there is a relatively high concentration of Spin-$\frac{1}{2}$ $^{29}$Si nuclear spins ($4.7\%4$). 
+Due to the large extent of the donor electron wavefunction, it is highly probable that a given donor will experience a hyperfine interaction with one or more of these nuclei.
+Although the large difference between the electron and nuclear gyromagnetic ratios prevents a state exchange or 'flip-flop' interaction, nearby pairs of $^{29}$Si nuclei do have this interaction.
+The rate of exchange is slow, ($\approx 100$Hz) and will cause a change in the hyperfine interaction with any nearby donor electrons.
+This will cause the acquisition of phase differences between electrons over time.
+As these changes are time dependent they are \textit{not} refocused by a Hahn echo sequence \cite{Wolfowicz2015a}. 
+In purified silicon samples this effect is reduced to the point that it is no longer the limiting factor in spin coherence.
+\\
+\textbf{Instantaneous Diffusion}
+\\
+In the first experiments on spin coherence times on purified silicon, the increase in coherence time was found to be on the order 2 fold \cite{Gordon1958}.
+The reason behind this limited increase was the high donor concentrations, leading to interaction between donors.
+Spins close enough to interact with one another will experience slightly different magnetic fields and the random nature of donor distribution leads to this effect being inhomogeneous.
+Once again, this will not be reversed by a Hahn echo sequence as two donors interacting with one another will both be flipped, meaning that the phase acquisition is unchanged.
+This effect is dependent on the concentration of donors in a sample according to:
+
+\begin{equation}
+\frac{1}{T_{2}^{\text{ID}}} = C(2\pi\gamma_e)^2\frac{\pi}{9\sqrt{3}}\mu_0\hslash,
+\label{eq:instDiff}
+\end{equation}
+
+where C is the donor concentration.
+\\
+At concentrations useful for ESR techniques and at sufficiently low temperatures instantaneous diffusion will always be a limiting factor in spin coherence times.

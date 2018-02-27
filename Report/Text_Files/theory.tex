@@ -102,6 +102,7 @@ A further term in the Hamiltonian is due to the nuclear quadrupole but this effe
 These effects leave a Hamiltonian of the following form:
  
 \begin{equation}
+\label{eq:spinHam}
 \hat{H} = \mu_bg_eB_0\hat{S_z} + \mu_ng_nB_0\hat{I_z} + A \hat{S}\cdot\hat{I},
 \end{equation}
 
@@ -138,26 +139,38 @@ In addition to their different energies electron and nuclear transitions have di
 The electron spin transition is much stronger and occurs on the order of nanoseconds at typical pulse powers, with the nuclear transition being on the order of microseconds.
 
 \subsection{Relaxation Processes}
+\label{sec:relProc}
 
 For spins in silicon, three main relaxation or decoherence processes occur, causing the loss of information.
 \\
+\\
 \textbf{Dephasing}
+\\
+\noindent\rule{\columnwidth}{1pt}
 \begin{adjustwidth}{1.5cm}{}
 The first of these was briefly discussed above - dephasing - the time scale for the process is termed \textbf{$T_2^*$}
 This is the process by which an ensemble of spins loses phase coherence due to each spin experiencing a different static magnetic field.
 As was described above, this loss of information can be reversed by a Hahn echo sequence.
 \end{adjustwidth}
-\textbf{Relaxation}
+\textbf{Relaxation} \newline
+\noindent\rule{\columnwidth}{1pt}
 \begin{adjustwidth}{1.5cm}{}
 The second process is known as relaxation and its time scale is termed $T_1$. A spin ensemble at a given temperature and magnetic field will have a Boltzmann distributed population across the available spin states defined by the magnetic field axis (i.e. across the eigenstates of the $\hat{Z}$ operator).
 The difference between higher and lower energy states is known as the polarisation of the ensemble.
 If this polarisation is reversed by a $\pi$ pulse, then on a time scale $T_1$ it will relax back to thermal equilibrium.
+As this process almost always involves interaction with the silicon crystal lattice it is also termed \textit{spin-lattice} relaxation.
 This process is strongly correlated with temperature and exact mechanisms will be discussed in the literature review section.
 \end{adjustwidth}
 \textbf{Decoherence}
+\\
+\noindent\rule{\columnwidth}{1pt}
 \begin{adjustwidth}{1.5cm}{}
 The third process, decoherence, occurs on the time scale $T_2$. 
 This is similar to the dephasing process described above but is irreversible. 
-Irreversible phase differences are caused by by inhomogeneous and \textit{time dependend} magnetic fields. 
+Irreversible phase differences are caused by by inhomogeneous and \textit{time dependent} magnetic fields. 
 Additional phase acquired due to a time varying magnetic field will not be reversed by a Hahn echo sequence as the field will act differently on the spin in the second half of the sequence.
 \end{adjustwidth}
+
+\subsection{Summary}
+
+The theory discussed above gives a background to the topics that will be discussed in detail during the literature review section of this report.

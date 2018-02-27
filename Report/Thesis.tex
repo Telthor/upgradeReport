@@ -40,9 +40,11 @@
 \usepackage{bookmark}
 \usepackage{braket}
 \usepackage{epigraph}
+\usepackage{fontspec}
 \usepackage{changepage}
-\usepackage[utf8]{inputenc}
-\DeclareUnicodeCharacter{2217}{*}
+\usepackage{amssymb}
+% \usepackage[utf8]{inputenc}
+% \DeclareUnicodeCharacter{2217}{*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
@@ -73,8 +75,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ifxetexorluatex
-  % \setmainfont{Minion Pro}
-  \doublespacing
+  \setmainfont{Minion Pro}
+  \singlespacing
 \else
   \usepackage[lf]{ebgaramond}
   % \usepackage{tgadventor}
