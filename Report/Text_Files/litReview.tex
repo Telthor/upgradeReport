@@ -188,7 +188,7 @@ This in turn changes the energy difference between the two spin states of the el
 
 \subsection{Theory}
 
-A technical description of the Stark shift in most cases employs effective mass theory \cite{Pica2014}.
+A technical description of the Stark shift in most cases employs effective mass theory and here I follow the approach taken by Pica \emph{et al} \cite{Pica2014}.
 This treats the donor system as if it were a hydrogen atom with a different mass embedded in a silicon lattice as opposed to a vacuum.
 This is done by replacing the electron's vacuum mass with its effective mass in the silicon and modifying the vacuum permittivity with the dielectric constant of silicon \cite{Wolfowicz2015a}.
 The conduction band of silicon has 6 minima - usually termed 'valleys' - situated in the $\pm x, \pm y, \pm z$ directions and close to the edge of the Brillouin zone, as seen in figure \ref{fig:siliconband}. 
@@ -224,8 +224,9 @@ The excited states are as follows:
 \begin{cases}
 \bm{\alpha_r} = \frac{1}{\sqrt{12}}(-1, -1, -1, -1, 2, 2)\\
 \bm{\alpha_s} = \frac{1}{2}(1, 1, -1, -1, 0, 0)\\
-\end{cases}
-\newline
+\end{cases}\\
+\end{equation}
+\begin{equation}
 \text{Triplet  } (1sT_2) \text{  } 
 \begin{cases}
 \bm{\alpha_x} = \frac{1}{\sqrt{2}}(1, -1, 0, 0, 0, 0)\\
@@ -233,3 +234,133 @@ The excited states are as follows:
 \bm{\alpha_z} = \frac{1}{\sqrt{12}}(0, 0, 0, 0, 1, -1)\\
 \end{cases}
 \end{equation}
+
+When an electric field is applied the symmetry of the valleys is broken leading to the mixing of the various states. 
+The states interact via the electric dipole moment $e\bm{E.r}$, allowing estimation of the impact via perturbation theory.
+The first order perturbation to the singlet state, $\int\bra{\psi_g(r)}e\bm{E.r}\ket{\psi_g(r)}d\bm{r}$ is zero by symmetry \cite{Pica2014}.
+The second order perturbation, given by $\sum_{i\neq g}{\int\frac{|\bra{\psi_g(r)}e\bm{E.r}\ket{\psi_g(r)}|^2}{E_g - E_i}d\bm{r}}$ is non-zero however, giving a to the ground state eigenfunction of:
+
+\begin{equation}
+\ket{\psi_g(r)} \longrightarrow \ket{\psi_g(r)}\left(1 + \frac{1}{2}\eta_A E^2 \right)+...
+\end{equation}
+
+The strength of the hyperfine interaction, $A$, is given by the probability density of the electron wavefunction at the nucleus: $|\ket{\psi_g(r=0)}|^2$. 
+Thus the change in the hyperfine is given by:
+
+\begin{equation}
+\frac{\Delta A}{A} = \frac{|\ket{\psi_g(r=0, E\neq 0)}|^2}{|\ket{\psi_g(r=0, E = 0)}|^2} - 1 = \eta_AE^2 + O(E^4)
+\end{equation}
+
+giving a quadratic shift in $E$. $\eta_A$ gives the strength of the shift and is always negative - the mixing with the excited states always reduces the population at the nucleus and thus the hyperfine coupling with it. 
+\\
+In addition to the modulation of the hyperfine coupling there is an effect on the electron g-factor.
+The g-factor is determined by the spin-orbit coupling and in general depends on the orientation of the applied magnetic field. 
+Due to the valley symmetry of the silicon conduction band this anisotropy is normally averaged out but with the application of an electric field this symmetry is broken, changing the electron's orbit and thus its g-factor.
+The strength of the effect depends on the axis of electric field. 
+If this axis is along one of the valley axes ([100] crystal axis) then the effect is maximised.
+If it is along the [111] crystal axis then the effect is equal for all valleys, leaving g-factor unchanged.
+The g-factor change is given by:
+
+\begin{equation}
+\frac{\Delta g_e}{g_e} - 1 = \eta_g(\theta_{BE}, \theta_{BC})E^2
+\end{equation} 
+
+where $\eta_g$ is the Stark g-factor parameter, $\theta_{BE}$ is the angle between magnetic and electric fields and $\theta_{BC}$ is the angle between the magnetic field and the crystal axis.
+\\
+Having discussed the theory and background of the Stark shift, I now turn to experimental progress on the subject.
+
+\subsection{Stark Shift Measurement Techniques}
+
+The first approach to measuring the Stark shift would be to take a field sweep.
+A field sweep is a standard ESR procedure to determine the magnetic field at which a spin transition occurs for a given microwave frequency.
+A standard Hahn echo sequence is performed and the intensity of the echo measured for a given before a new magnetic field is set and the procedure repeated.
+At the correct magnetic field for a spin transition an echo will be recorded, with its intensity diminishing to 0 as the magnetic field moves off resonance.
+A typical magnetic field sweep for phosphorus doped natural silicon is shown in figure \ref{fig:fieldSweep}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{Figures/fieldSweep.pdf}
+\caption[Phosphorus field sweep]{Graph showing a standard field sweep to locate spin transitions for electrons bound to phosphorus donors in silicon. Hahn echo intensity is recorded for each magnetic field, with the two large peaks corresponding to electrons bound to the two different phosphorus nuclear spins: $\pm \frac{1}{2}$}
+\label{fig:fieldSweep}
+\end{figure} 
+
+This experiment could be undertaken twice, once with electric field on and once with it off. 
+The Stark shift would produce a change in spin transition frequency which would be observed as a shift in the peaks of the graph.
+Unfortunately the Stark shift of the spin transition frequency is typically much smaller than the inhomogeneously broadened linewidth of the spin transition, meaning that no shift is visible \cite{Bradbury2007}. 
+Instead Bradbury \emph{et al} used a more subtle technique, harnessing the ability of Hahn echo sequence to refocus inhomogeneous broadening. 
+An electric pulse applied during only one half of a Hahn echo sequence would cause the spins to precess in the magnetic field at different rates when dephasing and rephasing. 
+This shift can then be detected as a phase shift in the echo intensity from the real to the imaginary channel. 
+Changing the length of the applied pulse and recording the echo intensity will introduce an oscillation. 
+The frequency of this oscillation can then be determined using a Fourier transform, thereby giving the Stark shift.
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{Figures/StarkShiftSequenceBasic.pdf}
+\caption[Stark shift sequence]{The simplest sequence used to measure a Stark shift on an electron. As the pulse length is increased the electron ensemble acquires a different phase during the first half of the echo compared with the second half, seen as a phase shift in the echo from the real to the imaginary channel.}
+\label{fig:starkseq}
+\end{figure}
+\\
+A further effect that must be taken into consideration is the impact of local electric fields. 
+These are present due to local deformations of the crystal lattice, creating different electric environments at each donor.
+In the presence of an external electric field, the total Stark shift of a given donor is given by: 
+
+\begin{equation}
+\left (E_{\text{local}} + E_{\text{ext}} \right)^2 = E_{\text{local}}^2 + E_{\text{ext}}^2 + E_{\text{local}}E_{\text{ext}}
+\end{equation}
+
+The inhomogeneity of the local fields would usually provide a simple offset in the phase shift, but the term that is linear in both $E_{\text{local}}$ and $E_{\text{ext}}$ causes the inhomogeneity to get larger as the applied field gets larger.
+This would result in a rapid decay of the echo signal, but can be avoided by applying a bipolar electric field pulse (i.e. half negative, half positive), a technique implemented by Bradbury \emph{et al} when measuring the Stark shift of antimony donors in silicon \cite{Bradbury2007}.
+This cancels the linear term but has no impact on the quadratic term.
+This sequence can be seen in figure \ref{fig:starkseq}. 
+
+\subsection{Stark Shift Experimental Results}
+
+Measurements of the Stark shift on all group V donors in silicon were undertaken by Wolfowicz \emph{et al} \cite{Wolfowicz2014,Pica2014}. 
+The experiment was performed using bulk doped samples of silicon, placed between copper plates.
+The copper plates were connected to an operational amplifier with an amplification factor of 126.
+Pulses were generated using an arbitrary wave generator.
+Results of their measurements are shown in figure \ref{fig:garyStarkResults}.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\columnwidth]{Figures/starkShiftResultsGary.pdf}
+\caption[Wolfowicz \emph{et al} Stark measurements]{These figures demonstrate the frequency shift in the spin transition as a result of the Stark shift, as measured by Wolfowicz \emph{et al} \cite{Wolfowicz2014}. Notable is the increased rate for higher nuclear spin numbers - this is due to the shift being proportional to the hyperfine coupling, which is in turn proportional to nuclear spin.}
+\label{fig:garyStarkResults}
+\end{figure}
+
+These measurements determined the following Stark shift parameter for $\eta_A$, with $\eta_g$ being smaller than the measurement sensitivity:
+
+\begin{center}
+\begin{tabular}{||c || c | c | c | c||}
+\hline
+& $^{31}$P & $^{75}$As & $^{121}$Sb & $^{209}$Bi \\
+\hline
+$\eta_A (\times 10^{-3} \mu m^2 / V^2)$ & $-2.5\pm 0.5$ & $-1.2 \pm 0.1$ & $-3.5 \pm 0.05$ & $-0.26\pm0.05$\\
+\hline
+\end{tabular}
+\end{center}
+
+Wolfowicz \emph{et al} also performed experiments to test conditional control of the spins using Stark shifts.
+The aim of such an experiment is to shift the transition frequency of the selected spin by several times its linewidth.
+This was not possible for the electron due to its broad linewidth even in purified silicon.
+Instead the experiment was performed on the nuclear transition, which has a much narrower linewidth due to its smaller dipole moment.
+By applying an electric field at the same time as nuclear spin $\pi$ pulse, Wolfowicz \emph{et al}, the process is measured as an identity with fidelity 93.3$\pm2.6\%$.
+This indicates that it is possible to control the application of pulses to nuclear spin qubits using electric fields as required by the Kane proposal.
+What is less clear is whether these spin qubits will be sufficiently resistant to any stray electric fields in a scalable quantum computing architecture. 
+
+\subsection{The Nuclear Spin Bath in Natural Silicon}
+
+% \subsection{Introduction}
+
+The presence of $^{29}$Si nuclei in natural silicon has been discussed earlier as one of the chief factors impacting qubit coherence times in that medium.
+Inhomogeneous hyperfine interactions between these spins and addressed electron spins leads to spectral diffusion and reductions in coherence times for qubits in natural silicon.
+Although most proposals for silicon donor qubit architectures have involved purified silicon to avoid these issues, a proposal has been put forward to use these impurity spins as a quantum register with applications for error correction \cite{Wolfowicz2016a}.
+From the perspective of the O'Gormann proposal, these spins could present a potential quantum register for data qubits, providing storage for their spin states during long computations.
+In order to control the interaction between data qubits and the $^{29}$Si nuclear spins the Stark shift will be necessary to control the transition frequency of a given spin relative to an external control pulse.
+Attempting to characterise the Stark shift of the hyperfine coupling between the electron and the $^{29}$ nuclei will be a goal of this report.
+
+
+
+\section{Summary}
+
+We have detailed above the theory and current experimental progress for the two main subjects addressed in this report: the impact of laser illumination on spin coherence times in silicon and the Stark shift for Selenium donors and for the coupling to the Si-29 bath.
+We now move on to the experimental methods 
