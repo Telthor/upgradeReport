@@ -130,3 +130,56 @@ This is shown in figure \ref{fig:nuclearecho}.
 \caption[Nuclear echo pulse sequence]{Cartoon showing the pulse sequence for a nuclear spin echo}
 \label{fig:nuclearecho}
 \end{figure}
+
+The nuclear echo sequence can be used to measure the Stark shift by setting the pulse intervals equal and adding a dipolar electric voltage pulse between two of the pulses.
+This causes the nuclear spin to acquire phase depending on the length and strength of the voltage pulse.
+If the voltage pulse length is swept whilst keeping all other factors constant then an oscillation of the signal is observed, giving the magnitude of the Stark shift.
+\\
+To measure nuclear $T_2$ time two pulse sequences can be used, with the most advantageous one being a full nuclear coherence transfer. 
+Whereas most ENDOR experiments only render the nuclear signal in one echo channel (real or imaginary) the full coherence transfer allows both to be meaningful.
+It is also an important sequence as it allows the storage of quantum information in the nuclear spin, which has a much greater coherence time.
+This opens up the possibility of using the nuclear spin as a memory for the electron spin \cite{Morton2008b}.
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{Figures/fullcoherencetransfer.pdf}
+\caption[Full coherence transfer]{Pulse sequence showing the full nuclear coherence transfer. Coherence is created by the first $\pi/2$ pulse before being transferred to the nuclear spin by the subsequent nuclear $\pi$ and electron $\pi$. After a set time the coherence is transferred back to the electron for read out.}
+\label{fig:fullCoher}
+\end{figure}
+
+\section{Experimental Set-ups}
+\subsection{Laser Experiments}
+\label{sec:lasExps}
+
+The set-up for measuring the impact of laser illumination on donors in silicon was relatively simple.
+The measured sample is placed in a Bruker resonator and loaded into a helium flow cryostat.
+The helium flow is initiated and the sample allowed to reach the desired temperature.
+The Toptica laser beam is initially split using a $90/10$ beam-splitter, with the lower power beam subsequently coupled into a fibre.
+Before fibre coupling the beam must be reflected of two adjustable mirrors to allow sufficient degrees of freedom for optimisation of power input.
+The fibre passes into a wavemeter, used to determine the output wavelength, and is coarsely tuned to the desired wavelength.
+The laser beam is not visible so is aligned to the cryostat window via an infrared-sensitive camera.
+For fine-tuning of the alignment, two approaches were used.
+The first is to place the sample in between two metallic contacts connected to a lock-in amplifier with a small oscillating voltage applied across the plates.
+The laser spot location is fine tuned via adjustable mirrors until the current measured by the lock-in amplifier is maximised.
+An alternative technique, not requiring the additional components but more taking more time, is to maximise the effect of the laser.
+This is done by measuring $T_1$ time of the sample repeatedly and adjusting the laser to minimise this measurement (indicating that the effect of the laser is maximised). 
+\\
+The laser output power can be controlled by changing the amplitude of the control voltage.
+This output power can be measured using a power metre and set to the desired value.
+Although this approach is appropriate for high powers, the limited resolution of the power metre ($\approx$ 0.2mW) makes it inappropriate for lower powers.
+To reach lower laser powers at reasonable errors ND filters are used.
+These are valued from ND 1.0 - 4.0 and ND 0.1-0.6 in two separate filter wheels.
+The power is set via control voltage to a stable value and ND filters are then used to adjust to the power at the sample.
+Manufacturer values for transmission at the relevant wavelength are then used to calculate exact powers as these vary slightly with wavelength.
+\\
+In all experiments on laser illumination the sample used was a float zone natural silicon sample doped at $6\times10^{15}\text{cm}^{-3}$ and sized at $1.5\times1.5\times10$mm.
+
+\subsection{Stark Shift Experiments}
+
+The Stark shift measurement set-up requires placing the sample in between two copper electrodes designed to cover the sample.
+The electrodes are placed in direct contact with the sample and held in place by thread tape.
+These electrodes are each soldered to a copper wire allowing the application of voltage pulses.
+Bi-polar pulses are generated using an AWG at up to $\pm2$V and subsequently amplified using an operational amplifier with a gain of $60\times$.
+Pulses are simultaneously monitored on an oscilloscope during application to measure the exact voltage being applied.
+
+
