@@ -211,3 +211,42 @@ As such it is difficult to incorporate such a mechanism into my simulations.
 One question would be whether this mechanism would demonstrate the temperature dependence that has so far been observed, with relaxation occurring more slowly at lower temperatures but under the same illumination.
 It is possible that the lower thermal velocity of free electrons at lower temperatures could account for the discrepancy, giving a smaller number of double scattering events per second.
 This presents an excellent next step for this work: determining both the density of free carriers at each wavelength and using this to provide an account of the scattering rate of electrons on donors.
+
+\section{Stark Shift Experiments}
+
+\subsection{Stark Shift on Selenium Donors}
+
+Observing the Stark shift proved challenging initially, with a replication of the previous experimental set-up not yielding the results that were expected when the set-up was tested on previously investigated systems.
+This proved to be due to a flaw in the positioning of the plates used to produce an electric field relative to the sample.
+Contact between the plates and the sample was required to observe a Stark shift.
+Once the set-up issues had been established a Stark shift was observed in Bismuth, replicating a prior experiment, as seen in figure \ref{fig:biStark}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\columnwidth]{Figures/BiMultiVolt.pdf}
+\caption[Stark shift in Bismuth]{Figure showing the Stark shift in bismuth as a result of bi-polar voltage pulses applied in one half of a Hahn echo sequence causing a phase shift in the electron precession. Oscillations frequency is proportional to the square of the voltage applied. The decay in the signal as the pulse length increases is a result of the inhomogeneous linear Stark term causing the loss of phase coherence.}
+\label{fig:biStark}
+\end{figure}
+
+This figure shows the oscillation in phase of the echo signal as the voltage pulse length is increased.
+The oscillation is proportional to $E^2$, causing the increase in oscillation rate as voltage is increased.
+The decay in the oscillations, particularly clear in the 99V case, is caused by the contribution of inhomogeneous linear electric field terms.
+Strain is a strong contributor to this effect meaning that excessively firm contact between plates and sample results in the rapid decay of the signal.
+\\
+Difficulties have been encountered measuring the Stark shift on selenium, in part due to its expected low value.
+As discussed in section \ref{sec:starkShiftLit}, the Stark shift is caused by a mixing between the ground state of the electron on the donor and higher energy levels leading to a modulation of the Hyperfine coupling between electron and nucleus.
+The gap to first excited state in selenium (as a deep donor) is significantly larger than in the shallow donors in silicon. 
+For example: phosphorus has a gap to the first excited state of $10.5$meV, bismuth $33.8$meV; selenium has a gap of $429$meV \cite{LoNardo2015,Nardo2015}. 
+As yet no Stark shift has been observed in Selenium, using pulses of up to 800$\mu$s long at $\pm99$V.
+By taking the maximum possible unobserved phase shift as being equal to the signal to noise ratio of the obtained data it is possible to obtain a value for $\eta_A$, the hyperfine Stark shift coefficient, of 0.7$\times10^{-7}$.
+I am not yet fully confident in this result due to several issues with the current experiment.
+The first of these is that it has been shown to be extremely sensitive to experimental set-up - strain and lack of contact between the plates and the sample rendering the results inaccurate.
+The sample being used for these experiments is quite large, being 4mm $\times$ 4mm $\times$ 2mm.
+This means that the plates cannot cover the entirety of the sample and remain able to fit in the spectrometer cavity.
+The presence of selenium also means that electrons preferentially populate these impurities, rather than any phosphorus impurities in the sample.
+This makes it hard to verify the Stark shift on a phosphorus transition before measuring a selenium transition.
+One possible approach would be to populate the phosphors impurities by using an above band gap laser pulse - a technique used in the group previously \cite{Nardo2015}.
+This would allow verification of the strength of the Stark shift on phosphorus prior to measuring it on selenium - allowing confidence in the experimental set-up.
+
+\subsection{Stark Shift on $^{29}$Si Nuclei}
