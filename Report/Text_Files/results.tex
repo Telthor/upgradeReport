@@ -250,3 +250,64 @@ One possible approach would be to populate the phosphors impurities by using an 
 This would allow verification of the strength of the Stark shift on phosphorus prior to measuring it on selenium - allowing confidence in the experimental set-up.
 
 \subsection{Stark Shift on $^{29}$Si Nuclei}
+
+The final experiment discussed here will be the attempt to measure the Stark shift on the hyperfine coupling between electrons bound to phosphorus donors and the $^{29}$Si nuclei found in natural silicon.
+The sample used in this experiment was a natural silicon sample doped at $1\times10^{16}$ and 0.51mm thick.
+The first step undertaken in this experiment was to verify the presence of the Stark shift on the phosphorus nucleus.
+This gave a Stark shift, as expected, but demonstrated a \emph{much} stronger shift in the signal than had previously been recorded. 
+With bipolar electric field pulses of 20V, corresponding to 40Vmm$^{-1}$, a Stark shift was observed that would correspond to the application of 140V in prior experiments \cite{Pica2014,Wolfowicz2015a}.
+Further to this, at voltages above 20V, a relaxation behaviour is observed in the signal - where the signal returns from fully negative to fully positive.
+This is despite the electron relaxation time being 100s of milliseconds at the temperature of 4.5k used in this experiment.
+This suggests that at high enough electric fields that there may be ionisation of the donors occurring causing this relaxation.
+\\
+To measure the Stark shift on the $^{29}$Si nuclei the first step undertaken was to locate the frequency of their transition via an RF frequency sweep, the results of which are shown in figure \ref{fig:si29freqsweep}. These frequencies give the hyperfine coupling constant of each nucleus, dependent on its distance to the donor impurity, equal to twice the frequency difference from the uncoupled $^{29}$Si nuclear transition of 2.91MHz. Nuclear echoes are measured at each transition frequency to give the potential size of the Stark shift signal and used to re-base the Stark shift data.
+
+\begin{figure}
+\centering
+\includegraphics[width = 0.8\columnwidth]{Figures/FreqSweep.pdf} 
+\caption[Frequency sweep of $^{29}$Si transitions]{Figure showing the peaks corresponding to the various $^{29}$Si nuclei coupled to the donor electron. The different transition frequencies correspond to different hyperfine couplings, based on the different distances from the $^{29}$Si to the donor impurity. The strength of the hyperfine coupling is determined by twice the difference between the transition frequency and the uncoupled transition of the $^{29}$Si nucleus of 2.91MHz \cite{Wolfowicz2016a}.}
+\label{fig:si29freqsweep}
+\end{figure}
+
+Measurements of the Stark shift was undertaken at the maximum voltage before relaxation behaviour occurred of 15V (40V/mm), using the pulse sequence shown in figure \ref{fig:nuclearecho}.
+Results are shown in figure \ref{fig:si29NoStark}.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{Figures/StarkShiftMultiEchoReb.pdf}
+\caption[Stark shift measurements of $^{29}$Si]{Figure shows the results of Stark shift experiments on 4 of the $^{29}$Si transitions, demonstrating that no obvious Stark shift is visible. Included is a 0 voltage sweep for comparison. The slight change in the signal when a voltage is applied is attributed to the beginning of relaxation behaviour being observed: as the $T_1$ of the electron is reduced a slight increase in signal is observed from spins previously saturated by repetition of the experiment returning to thermal equilibrium.} 
+\label{fig:si29NoStark}
+\end{figure}
+
+These demonstrate that no Stark shift is observable at any of these transitions. 
+The small change in the signal relative to the slight reduction in $T_1$ of the electron increasing the signal by relaxing electrons previously saturated by the repetition rate of the experiment to thermal equilibrium. 
+The change in signal cannot be attributed to the Stark shift as this would result in the signal becoming more positive initially, not more negative. 
+Analysis of these results for upper bounding of the Stark shift parameter is made difficult by the unexpectedly strong Stark shift of the phosphorus nucleus.
+At the voltage the experiment was conducted at the upper bound is quite large for each of the transitions, as seen in the table below.
+For reference, the upper bound for the case that the voltage was equal to 140 V mm$^{-1}$ (as implied by the observed Stark shift of the phosphorus nucleus) is included. 
+
+\begin{center}
+\begin{tabular}{||c || c | c ||}
+\hline
+Transition (MHz)& $\eta_A$ 40V mm$^{-1}$ & $\eta_A$ 140V mm$^{-1}$\\
+\hline
+3.85 & 0.22 & 0.01\\
+4.07 & 0.12 & 0.008\\
+4.61 & 0.12 & 0.006\\
+5.22 & 0.09 & 0.004\\
+5.92 & 0.07 & 0.003\\
+\hline
+\end{tabular}
+\end{center}
+
+The resolution of the experiment is further limited by the pulse sequence used to measure the Stark shift, which renders the imaginary channel meaningless.
+Repeating the experiment and using the full nuclear coherence transfer method would provide this imaginary channel.
+This would improve the sensitivity of the experiment as the phase shift would then be proportional to the inverse sine of the frequency shift, which is a much larger and therefore more easily observable figure.
+This experiment was implemented without difficulty on the phosphorus nucleus and a Stark shift in both channels observed.
+However, despite multiple attempts it has yet to be performed successfully on the $^{29}$Si transitions.
+This may be due to the reduced signal, due the significantly longer pulse sequence.
+However this pulse sequence has been implemented successfully before on this system in \cite{Wolfowicz2016a}, suggesting that issues may be introduced by the presence of the copper plates.
+These provide a much stronger thermal coupling to the environment, reducing the $T_1$ time from the expected many seconds to only 100s of milliseconds. 
+This may explain the fact that no signal can be observed when performing a full nuclear coherence transfer experiment on the $^{29}$Si transitions.
+\\
