@@ -1,7 +1,7 @@
 % !TEX root = ../Thesis.tex
 \chapter{Results}
 
-In this chapter we will address the results gained so far. Looking first at the impact of laser illumination on coherence times before examining the impact of the Stark shift on selenium donors in purified silicon and the hyperfine coupling of phosphorus donors to $^{29}$Si nuclei in natural silicon.
+In this chapter I will address the results gained so far. Looking first at the impact of laser illumination on coherence times before examining the impact of the Stark shift on selenium donors in purified silicon and the hyperfine coupling of phosphorus donors to $^{29}$Si nuclei in natural silicon.
 
 \section{Illumination Induced Decoherence}
 
@@ -9,7 +9,7 @@ In this chapter we will address the results gained so far. Looking first at the 
 
 The first step undertaken before any laser illumination occurs is to characterise the sample's $T_1$ and $T_2$ times `in the dark' at the measurement temperature. 
 Experiments were performed at 8k and 7k, with typical $T_1$ and $T_2$ decays shown in figure \ref{fig:t1andt2}.
-The inversion recovery has be fitted with a standard exponential decay whilst the $T_2$ decay has had a stretched exponential decay applied.
+The inversion recovery has been fitted with a standard exponential decay whilst the $T_2$ decay has had a stretched exponential decay applied.
 The time constants of these decays give the $T_1$ and $T_2$ times with errors in the fit used to establish errors in their values.
 The stretched exponential decay of $T_2$ indicates the presence of spectral diffusion.
 $T_2$ decays with dynamical decoupling applied do not have this stretch factor as they are isolated from spectral diffusion.
@@ -33,7 +33,7 @@ At 7k $T_1$ was $32\pm0.1$ms and $T_2$ was unchanged.
 
 \subsection{Bi-Exponential Inversion Recovery}
 
-A set of high power measurements have been taken at powers between 2mW and 130mW, at wavelengths 1060nm, 1070nm and 1080nm, and at temperatures of 7k and 8k.
+A set of high power measurements have been taken at powers between 2mW and 130mW, at wavelengths 1058nm, 1070nm and 1080nm, and at temperatures of 7k and 8k.
 At each power and wavelength 3 measurements were made: $T_1$, $T_2$ and $T_2$ whilst using a 4 $\pi$ pulse dynamical decoupling sequence - CPMG.
 An initial observation is that there is a strongly bi-exponential shape to the inversion recovery, requiring a fit of the form:
 
@@ -55,7 +55,7 @@ This suggests that there is a distribution of the illumination effect throughout
 This becomes more obvious when comparing the two time constants over a range of powers, as seen in figure \ref{fig:T1avsT1b}.
 This shows that the lower $T_1$ has a strict inverse polynomial dependence on laser power, whilst the longer $T_1$ cannot be similarly fit as it appears to saturate at lower powers.
 Given this, it seems prudent when trying to determine the relationship between the incident light parameters and relaxation behaviour to use the shorter of the two time constants where a bi-exponential fit has been applied.
-In the case of a set of data qubits close to the silicon surface, as is suggested in \cite{OGorman2014}, these qubits would be exposed to illumination and not shielded as appears to be the case in the long $T_1$ case.
+In the case of a set of data qubits close to the silicon surface, as is suggested in \cite{OGorman2014}, these qubits would be exposed to illumination and not shielded as appears to be the case for donors experiencing the long $T_1$.
 
 
 
@@ -75,7 +75,7 @@ As such, it would be expected that this wavelength would have a stronger effect 
 This factor has previously been postulated as the dominant process affecting relaxation rates of donor electrons.
 Figure \ref{fig:wavcomparison} shows the relationship between relaxation time and laser power for three wavelengths, fitted according to $A/t^{\alpha}$. 
 The power for each wavelength is $0.73\pm.002, 0.68\pm.0002$ and $0.68\pm.003$, in order of increasing wavelength.
-Measurements were also taken at 2mW and 5mW but are not included here as the large error in their measurements makes them unsuitable for comparison between data sets. 
+Measurements were also taken at 2mW and 5mW but are not included here as the large error in the power values makes them unsuitable for comparison between data sets. 
 What is clear from the above graph is that there is an observable difference between the case of 1058nm illumination and the two higher wavelengths. 
 This is to be expected given that 1058nm is at approximately the silicon band gap, meaning that absorption of photons will be higher and free carrier generation significantly higher than with less energetic photons.
 Although the higher wavelengths have a lesser effect, there is still a strong reduction in relaxation times.
@@ -90,7 +90,7 @@ The similarity between the effects suggest that the mechanisms responsible for t
 
 The impact of illumination on relaxation rates observed here is in line with predictions.
 Increased wavelength results in a slower relaxation rate at equivalent powers, with a more significant change being observed as the silicon band gap energy is crossed.
-Relaxation rates follow a $a/P^{\alpha}$
+Relaxation rates follow a $a/P^{\alpha}$ curve.
 
 \subsubsection{Effect on $T_2$}
 
@@ -173,7 +173,7 @@ The reason that heating is presented as a potential explanation for the observed
 This means that only a small amount of energy is required to effect significant heating in silicon.
 Also relevant is that silicon is a poor photo-emitter, meaning that any infra-red radiation absorbed is likely to end up as heat rather than emitted photons. 
 Calculating potential heat rises is made difficult by the scarcity of literature on the absorption coefficient of silicon at low temperatures.
-Studies have concentrated on silicon at room temperature due to its use in solar cells and have tended to assume that low-temperature, below band-gap absorption will be low due to the scarcity of phonons to assist transitions.
+Studies have concentrated on silicon at room temperature due to its use in solar cells and have tended to assume that low-temperature, below band-gap absorption will be low due to the scarcity of phonons to assist transitions and conduction band electrons to absorb sub band gap photons.
 Interest has been peaked recently due to the possibility of taking advantage of the anticipated high transmission qualities of silicon at low temperatures for use as an interferometer in a gravitational wave detector \cite{Degallaix2014}.
 One study in particular provides a useful insight, although not a directly comparable one.
 This measured the absorbance of silicon at 6k by monitoring its temperature increase under illumination by a 1550nm laser.
@@ -269,7 +269,7 @@ To measure the Stark shift on the $^{29}$Si nuclei the first step undertaken was
 \label{fig:si29freqsweep}
 \end{figure}
 
-Measurements of the Stark shift was undertaken at the maximum voltage before relaxation behaviour occurred of 15V (40V/mm), using the pulse sequence shown in figure \ref{fig:nuclearecho}.
+Measurements of the Stark shift was undertaken at the maximum voltage before relaxation behaviour occurred of 15V (30V/mm), using the pulse sequence shown in figure \ref{fig:nuclearecho}.
 Results are shown in figure \ref{fig:si29NoStark}.
 
 
@@ -281,7 +281,7 @@ Results are shown in figure \ref{fig:si29NoStark}.
 \end{figure}
 
 These demonstrate that no Stark shift is observable at any of these transitions. 
-The small change in the signal relative to the slight reduction in $T_1$ of the electron increasing the signal by relaxing electrons previously saturated by the repetition rate of the experiment to thermal equilibrium. 
+The small change in the signal - getting slightly more negative relative to the 0 voltage case - is attributed to the slight reduction in $T_1$ of the electron increasing the signal by relaxing electrons previously saturated by the repetition rate of the experiment to thermal equilibrium. 
 The change in signal cannot be attributed to the Stark shift as this would result in the signal becoming more positive initially, not more negative. 
 Analysis of these results for upper bounding of the Stark shift parameter is made difficult by the unexpectedly strong Stark shift of the phosphorus nucleus.
 At the voltage the experiment was conducted at the upper bound is quite large for each of the transitions, as seen in the table below.

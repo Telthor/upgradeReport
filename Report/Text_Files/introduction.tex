@@ -9,18 +9,17 @@
 % \end{minipage}
 % \vspace{0.5cm}
 % \end{center}
-\epigraph{\textit{At midnight all the agents and superhuman crew come out and round up everyone that knows more than they do}}{}
 Quantum computing has been an active field of research since the concept was first suggested by Richard Feynman in the early 1980s \cite{Feynman1982}.
-Originally proposed as an efficient method for simulating chemical processes (something that traditional computers find extremely taxing) the discovery of several algorithms offering significant speed increases over classical computers has further fueLled research \cite{Shor1994,Shor1997}.
+Originally proposed as an efficient method for simulating chemical processes (something that traditional computers find extremely taxing) the discovery of several algorithms offering significant speed increases over classical computers has further fuelled research \cite{Shor1994,Shor1997}.
 Strong initial scepticism abounded regarding the potential for quantum computers to exist in the real world, primarily due to the concerns that error correction with such a complex device would be impossible\cite{Preskill1997}.
 This pessimism gave way with the identification of an error threshold for quantum computation.
 Given an error rate below a critical threshold it was possible to perform an arbitrarily long computation with negligible possibility of significant error \cite{Shor1996,Aharonov1997}.
 Following these discoveries serious attention has been given to the development of error correcting codes that might be implemented to allow a physical quantum computer to be \emph{fault tolerant}.
 \\
-Gottesman identified the class of error correcting codes known as \emph{stabilizer codes}, where codes are defined by the group of logical operators that leave the code unchanged \cite{Gottesman1997a}.
-This class of quantum error correcting codes have become the dominant form in theoretical research.
-Of these one in particular has become the focus of much of the ongoing research of quantum computing, \emph{the surface code}, developed by Bravyi and Kitaev \cite{Bravyi1998}.
-Although other quantum error correcting codes (such as colour codes \cite{Vasmer2018}) exist, the surface code has become the focus for experimental implementations. This is due mainly to the relatively high error threshold that it is able to tolerate, $\sim0.5\%$, and the simple architecture of a planar grid of qubits.
+Gottesman identified the class of error correcting codes known as \emph{stabilizer codes}, defined by the group of logical operators that leave the code unchanged \cite{Gottesman1997a}.
+This class of quantum error correcting codes has become the dominant form in theoretical research.
+Of these \emph{the surface code}, developed by Bravyi and Kitaev \cite{Bravyi1998}, has become pre-eminent in experimental efforts.
+Although other quantum error correcting codes (such as colour codes \cite{Vasmer2018}) exist, the surface code has become the focus for experimental implementations. This is due mainly to the relatively high error threshold, $\sim0.5\%$, and the simple architecture of a planar grid of qubits.
 \\
 In recent years there has been rapid progress in the development of physical qubits.
 Groups in both the academic and private sectors have shown small numbers of qubits functioning with error rates above the fault tolerant threshold \cite{Barends2015,Reagor2017}.
@@ -31,7 +30,7 @@ With the numbers required likely to be close to $100 \times 10^6$ and the curren
 Although there are many alternative systems that could provide a qubit, this paper will focus on the use of the spins of nuclei and electrons bound to donors in semiconductors, particularly silicon.
 A seminal paper by Kane \cite{Kane1998} stimulated much of the research interest in this field.
 He proposed using the spin of phosphorus nuclei in silicon as qubits with the ability to mediate interactions between neighbouring donor nuclei using the interaction between the electrons bound to each.
-These types of qubit are attractive due to their exceptionally long coherence times, the time that the qubit reliably stores quantum information for. 
+These types of qubit are attractive due to their exceptionally long coherence times: the time that the qubit reliably stores quantum information for. 
 A long coherence time relative to qubit gate times is essential, as this determines the error rate of the qubits.
 Coherence times as long as several seconds have been reported for donor spin qubits in silicon, whilst gate times can be as low as several nanoseconds \cite{Wolfowicz2013}. 
 Despite these advantages, development of these types of qubits for quantum computers has lagged behind the superconducting and ion trap versions \cite{Ballance2015}. 
@@ -59,12 +58,12 @@ Optical qubit readout is suggested in the proposal by O'Gormann et al and is a w
 A concern with optical readout is the impact that illumination can have on the coherence times of donors in silicon. 
 Silicon has a band gap energy equivalent to approximately 1058nm or photon energy of 1.17eV. 
 Illumination at shorter wavelengths than this will create free electrons in the silicon conduction band.
-These can scatter off the electrons bound to donors, causing them to relax and shortening the $T_1$ time of the qubits as a whole \cite{Ross2017}.  
+These can scatter off the electrons bound to donors, causing them to relax and shortening the $T_1$ time of the qubits as a whole \cite{Ross2017a}.
 NV centres are read out at between 500nm and 600nm, illumination that would reduce data qubit coherence times and increase the qubit error rate. 
 Alternative optically addressed spin qubits at higher wavelengths exist, such as the di-vacancy centre in silicon carbide \cite{Christle2014}, but a vital question is what wavelengths can be used for read-out without compromising data qubit coherence times.
 This report addresses this question by examining the effect of various laser wavelengths close to the silicon band gap on the coherence times of electrons bound to phosphorus donors in silicon.
 \\
-Another key question presented by the O'Gormann proposal is how to control the data qubits.
+Another key question presented by the O'Gormann proposal is what data qubits to select and how to control them.
 The frequencies traditionally used for electron spin resonance are between 8GHz and 10GHz. 
 Electromagnetic radiation at these frequencies require large coaxial cables and cavities for transmission. 
 This makes it almost impossible to individually address qubits using microwaves. 
@@ -75,8 +74,11 @@ In addition to the potential control benefits provided by the Stark shift, it ca
 Inhomogeneous electric fields near spin qubits would alter the energy of their transition, potentially leading to decoherence.
 It is also beneficial, therefore, to identify systems that only experience a small Stark shift, as this would render them much more resistant to electric field noise and make them potentially ideal data qubits.
 One such system is explored in this report, the unpaired electron bound to a selenium$+$ donor in silicon.
-Among these is the hyperfine interaction between the donor electron and the silicon-29 nuclei present in natural silicon.
-The nuclear bath has been identified as a potential quantum register and the ability to tune the interaction between data qubits and memory could be of use. 
+One further area of interest is the potential integration of a quantum memory into the data qubit lattice.
+The spin-$\frac{1}{2}$ $^{29}$Si nuclei are normally viewed as a nuisance due to their reducing the coherence times of electrons bound to donors in silicon.
+They have, however, been shown as a potential quantum register for these donor qubits, due to their long coherence times.
+The Stark shift offers a potential means to control the interaction between data qubits and a $^{29}$Si based quantum memory in natural silicon.
+As such a final focus of this paper will be an attempt to measure the Stark shift of the interaction between the $^{29}$Si nuclei and the electrons bound to phosphorus donors in silicon.
 
 
 

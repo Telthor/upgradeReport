@@ -16,7 +16,7 @@ For an electron in free space the energy difference is given by:
 \label{eq:enSplit}
 \end{equation}
 
-where $g_e$ is the free electron g-factor, $\mu_b$ is the Bohr magneton and $B$is the magnetic field strength. 
+where $g_e$ is the free electron g-factor, $\mu_b$ is the Bohr magneton and $B$ is the magnetic field strength. 
 This results in an energy splitting as seen in figure \ref{fig:elecSplit}. 
 
 \begin{figure}
@@ -33,7 +33,7 @@ Measuring reflection of radiation from the sample whilst sweeping magnetic field
 
 \subsection{Pulsed Electron Spin Resonance and Qubits}
 The description above details continuous wave (CW) ESR, a technique that has proven invaluable for studying the electronic structure of materials.
-Another ESR has proven more popular for the manipulation of spins for use of qubits: pulsed ESR.
+Another ESR technique has proven more popular for the manipulation of spins for use as qubits: pulsed ESR.
 This uses short bursts of microwave radiation, on resonance with the spin transition, to control spin states and allows the spin to function as a qubit.
 This control is achieved by placing the spins at the centre of a cavity which produces a magnetic field when a pulse is applied.
 This magnetic field causes precession which can be used to rotate the spins. 
@@ -53,15 +53,15 @@ This emitted radiation can be demodulated with the control radiation giving a DC
 In a perfectly homogeneous magnetic field all spins would precess at the same rate giving a constant DC signal. In reality however, all spins will precess at slightly different rates due to small, static differences in the magnetic field each experiences.
 So, following a $\pi/2$ pulse, the signal from the spins will rapidly decay as the ensemble of spins lose phase coherence. 
 A technique, known as a spin or Hahn echo, to reverse this loss of phase was developed by Erwin Hahn in 1950 \cite{hahn1950}. 
-This follows a $\pi/2$ pulse with a $\pi$ pulse after a set time interval, $T$. 
+This follows a $\pi/2$ pulse with a $\pi$ pulse after a set time interval, $\tau$. 
 \textit{Static} magnetic field differences now act to reverse the loss of phase coherence. 
-This results in a brief re-phasing of the spins following another interval $T$, detected as a rise and fall of a DC signal or and `Echo'.
+This results in a brief re-phasing of the spins following another interval $\tau$, detected as a rise and fall of a DC signal or an `Echo'.
 A cartoon of this sequence is shown in figure \ref{fig:HahnEcho}. 
 
 \begin{figure}
 \centering
 \includegraphics[width = \columnwidth]{Figures/hahnEcho.pdf}
-\caption[Hahn echo sequence]{Cartoon showing a Hahn echo pulse sequence. A $\frac{\pi}{2}$ pulse causes the spins to precess in the $x-y$ plane. Loss of phase coherence is reversed via a $\pi$ pulse following time interval $T$ and a signal is detected following another interval of $T$.}
+\caption[Hahn echo sequence]{Cartoon showing a Hahn echo pulse sequence. A $\frac{\pi}{2}$ pulse causes the spins to precess in the $x-y$ plane. Loss of phase coherence is reversed via a $\pi$ pulse following time interval $\tau$ and a signal is detected following another interval of $\tau$.}
 \label{fig:HahnEcho}
 \end{figure}
 
@@ -69,7 +69,7 @@ A cartoon of this sequence is shown in figure \ref{fig:HahnEcho}.
 \subsubsection{The Bloch Sphere}
 
 The control pulses produce a magnetic field that rotates at the same rate as the spins, meaning a fixed coordinate system can be defined.
-The rotation axis of the control pulses can be changed by varying their phase, for example to a pulse of 0 phase is defined as a rotation about the $x$ axis whilst a pulse of $\pi/2$ phase is a rotation about the $y$.
+The rotation axis of the control pulses can be changed by varying their phase, for example a pulse of 0 phase is defined as a rotation about the $x$ axis whilst a pulse of $\pi/2$ phase is a rotation about the $y$.
 This allows control of the direction of the spin vector in 3-D space, with the $z$-axis defined by the static magnetic field.  
 A qubit, the basic unit of a quantum computer, can be described as a point within a unit sphere, known as a Bloch sphere and shown in figure \ref{fig:blochSphere} \cite{Nielsen:2011:QCQ:1972505}.
 Clearly then, a single spin is an archetypal qubit: its eigenstates of $\ket{\uparrow}$ and $\ket{\downarrow}$ form the poles of the Bloch sphere. 
@@ -131,7 +131,7 @@ In the simple case of phosphorus this results in the four energy levels seen in 
 \end{figure}
 
 For the more complex case of bismuth, instead of 4 possible energy levels there are 20. 
-Not all transitions are possible - spins are changed by the absorption or emission of a photon, leaving only transitions where the total spin changes by $\pm1$ as allowed.
+Not all transitions are possible - spins are changed by the absorption or emission of a photon, only allowing transitions where the total spin changes by $\pm1$.
 This means that only nuclear or electron spin can be flipped at once, not both. 
 It should be clear that the transitions that involve an electron spin flip ( e.g. $\ket{\uparrow \Uparrow} \longrightarrow \ket{\downarrow \Uparrow}$) are significantly higher in energy than those involving a nuclear spin flip (e.g. $\ket{\uparrow \Uparrow} \longrightarrow \ket{\uparrow \Downarrow}$). 
 At typical experimental magnetic fields ($\approx 0.3$ Tesla), the nuclear transitions are at frequencies of 10s of MHz, whilst the electron transitions are at $\approx 9.7$ GHz.
