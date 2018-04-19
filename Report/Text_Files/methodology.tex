@@ -11,7 +11,7 @@ Flow into the cryostat is controlled via a valve for coarse temperature control 
 A Bruker electromagnet provides a static field of up to 1.5 Tesla for ESR measurements.
 \\
 For ESR measurements a Bruker E500 X-Band spectrometer is used, with the pulses generated amplified via a travelling wave tube amplifier.
-The time resolution on this spectrometer is 4ns.
+The time resolution on this spectrometer is 4~ns.
 Pulses generated enter a Bruker resonator, placed in the cryostat, which has a split ring cavity at the base with the sample at the centre.
 Microwave pulses entering this cavity generate an oscillating magnetic field at the sample for electron spin control. 
 The resonant frequency of this cavity is fixed at a given temperature but some tuning of its q-factor is possible.
@@ -24,10 +24,10 @@ This is captured using Bruker's Xepr software, which can integrate under the ech
 
 \subsection{Laser}
 
-The main laser used in this report is a Toptica DL Pro - a tunable diode laser with a range from approximately 1060nm to 1080nm.
+The main laser used in this report is a Toptica DL Pro - a tunable diode laser with a range from approximately 1060~nm to 1080~nm.
 This laser can be tuned in two ways: the first is a coarse tuning which is achieved by manually changing the cavity size via a control knob. 
 The second is a fine tuning achieved electronically, this is useful for extremely precise wavelength tuning such as is necessary for bound-exciton experiments or spectroscopy but is not used in this report.
-The laser has a linewidth of 100kHz and an output power of up to 130mW.
+The laser has a linewidth of 100~kHz and an output power of up to 130mW.
 
 \section{Pulse Sequences}
 
@@ -91,11 +91,11 @@ Important to note is that the $\pi$ pulses are applied along an orthogonal rotat
 \begin{figure}
 \centering
 \includegraphics[width=\columnwidth]{Figures/CPMG.pdf}
-\caption[CPMG pulse sequence](The CPMG dynamical decoupling sequence, which uses successive $\pi$ pulses to reduce the bandwidth of noise that the donor spins are exposed to, thereby increasing effective decoherence time.)
+\caption[CPMG pulse sequence]{The CPMG dynamical decoupling sequence, which uses successive $\pi$ pulses to reduce the bandwidth of noise that the donor spins are exposed to, thereby increasing effective decoherence time.}
 \label{fig:CPMGpulse}
 \end{figure}
 
-\subsection{Nuclear Pulse Sequences}
+\subsection{Nuclear Spin Pulse Sequences}
 
 Measurements of nuclear spins can be undertaken directly, as is performed in NMR studies, but their significantly weaker signal relative to the electron (due to their much smaller polarisation) makes this technique troublesome.
 The process undertaken when a coupled electron-nucleus system exists is based around ENDOR (Electron Nuclear Double Resonance) sequences.
@@ -181,7 +181,7 @@ The electrodes are placed in direct contact with the sample and held in place by
 These electrodes are each soldered to a copper wire allowing the application of voltage pulses.
 Bi-polar pulses are generated using an AWG at up to $\pm2$V and subsequently amplified using an operational amplifier with a gain of $60\times$.
 Pulses are simultaneously monitored on an oscilloscope during application to measure the exact voltage being applied.
-For measurements on the $^{29}$Si nuclei temperatures of 4.5k were used to ensure that the electron $T_1$ was long enough to ensure it did not restrict nuclear coherence times.
+For measurements on the $^{29}$Si nuclei temperatures of 4.5~K were used to ensure that the electron $T_1$ was long enough to ensure it did not restrict nuclear coherence times.
 To reset the electron polarisation an infra-red LED is used at the base of the resonator to illuminate the sample when desired, effecting a rapid relaxation to thermal equilibrium.
 
 

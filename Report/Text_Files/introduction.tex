@@ -25,14 +25,14 @@ In recent years there has been rapid progress in the development of physical qub
 Groups in both the academic and private sectors have shown small numbers of qubits functioning with error rates above the fault tolerant threshold \cite{Barends2015,Reagor2017}.
 The successful recent approaches have tended to focus on superconducting circuits to produce their qubits.
 Whilst these have proved excellent for the small numbers of qubits currently in use, it is likely that they will present significant additional challenges when scaling to numbers sufficient for useful, fault-tolerant quantum computation.
-With the numbers required likely to be close to $100 \times 10^6$ and the current size of these qubits close to 1mm$^2$, it will likely be impossible to use these qubits in their current form in a fault-tolerant quantum computer.
+With the numbers required likely to be close to $100 \times 10^6$ and the current size of these qubits close to 1~mm$^2$, it will likely be impossible to use these qubits in their current form in a fault-tolerant quantum computer.
 \\
 Although there are many alternative systems that could provide a qubit, this paper will focus on the use of the spins of nuclei and electrons bound to donors in semiconductors, particularly silicon.
 A seminal paper by Kane \cite{Kane1998} stimulated much of the research interest in this field.
 He proposed using the spin of phosphorus nuclei in silicon as qubits with the ability to mediate interactions between neighbouring donor nuclei using the interaction between the electrons bound to each.
 These types of qubit are attractive due to their exceptionally long coherence times: the time that the qubit reliably stores quantum information for. 
 A long coherence time relative to qubit gate times is essential, as this determines the error rate of the qubits.
-Coherence times as long as several seconds have been reported for donor spin qubits in silicon, whilst gate times can be as low as several nanoseconds \cite{Wolfowicz2013}. 
+Coherence times as long as several seconds have been reported for donor spin qubits in silicon, whilst gate times can be as short as several nanoseconds \cite{Wolfowicz2013}. 
 Despite these advantages, development of these types of qubits for quantum computers has lagged behind the superconducting and ion trap versions \cite{Ballance2015}. 
 This is due to the difficulty of isolating and addressing single donors in a silicon lattice. 
 Kane's proposal required sub nano-metre precision in qubit placement to facilitate inter-qubit interactions. 
@@ -44,7 +44,7 @@ One such proposal is from O'Gormann et al \cite{OGorman2014}.
 This proposal takes a similar approach to Kane, with qubits being donor spins in a silicon lattice. 
 Where it differs significantly is in its use of two lattices of qubits. 
 One of these is for the storage of data, whilst the other performs measurements on these data qubits. 
-This measurement stage is placed above the data stage and held close, within 40nm, and moved in a repeating cycle over the data qubits.
+This measurement stage is placed above the data stage and held close, within 40~nm, and moved in a repeating cycle over the data qubits.
 This allows each measurement qubit to perform $\hat{X}$ or $\hat{Z}$ measurement on groups of four data qubits, the stabilizer measurements that make up the fundamental units of surface code.
 This architecture allows for data qubits to be placed much farther apart - since no direct interaction between them is required.
 Several key research questions remain:
@@ -56,15 +56,15 @@ Several key research questions remain:
 Whilst donors in silicon make excellent choices for the data qubits due to the properties stated above, a different qubit species is required for the measurement qubits to avoid an unwanted exchange interaction between the two lattices.
 Optical qubit readout is suggested in the proposal by O'Gormann et al and is a well studied means of reading the state of spin qubits, particularly in nitrogen-vacancy (NV) centres in diamond \cite{Liu2017}.
 A concern with optical readout is the impact that illumination can have on the coherence times of donors in silicon. 
-Silicon has a band gap energy equivalent to approximately 1058nm or photon energy of 1.17eV. 
+Silicon has a band gap energy equivalent to approximately 1058~nm or photon energy of 1.17~eV. 
 Illumination at shorter wavelengths than this will create free electrons in the silicon conduction band.
 These can scatter off the electrons bound to donors, causing them to relax and shortening the $T_1$ time of the qubits as a whole \cite{Ross2017a}.
-NV centres are read out at between 500nm and 600nm, illumination that would reduce data qubit coherence times and increase the qubit error rate. 
+NV centres are read out at between 500~nm and 600~nm, illumination that would reduce data qubit coherence times and increase the qubit error rate. 
 Alternative optically addressed spin qubits at higher wavelengths exist, such as the di-vacancy centre in silicon carbide \cite{Christle2014}, but a vital question is what wavelengths can be used for read-out without compromising data qubit coherence times.
 This report addresses this question by examining the effect of various laser wavelengths close to the silicon band gap on the coherence times of electrons bound to phosphorus donors in silicon.
 \\
 Another key question presented by the O'Gormann proposal is what data qubits to select and how to control them.
-The frequencies traditionally used for electron spin resonance are between 8GHz and 10GHz. 
+The frequencies traditionally used for electron spin resonance are between 8~GHz and 10~GHz. 
 Electromagnetic radiation at these frequencies require large coaxial cables and cavities for transmission. 
 This makes it almost impossible to individually address qubits using microwaves. 
 Instead the solution proposed by Kane is to use global microwave pulses, addressing all qubits at once.
