@@ -1,0 +1,597 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{Bloch1946}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BF}{%
+         family={Bloch},
+         familyi={B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BF1}
+    \strng{fullhash}{BF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The magnetic moments of nuclei in normal matter will result in a nuclear
+  paramagnetic polarization upon establishment of equilibrium in a constant
+  magnetic field. It is shown that a radiofrequency field at right angles to
+  the constant field causes a forced precession of the total polarization
+  around the constant field with decreasing latitude as the Larmor frequency
+  approaches adiabatically the frequency of the r-f field. Thus there results a
+  component of the nuclear polarization at right angles to both the constant
+  and the r-f field and it is shown that under normal laboratory conditions
+  this component can induce observable voltages. In Section 3 we discuss this
+  nuclear induction, considering the effect of external fields only, while in
+  Section 4 those modifications are described which originate from internal
+  fields and finite relaxation times. {\textcopyright} 1946 The American
+  Physical Society.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.70.460
+    \endverb
+    \field{issn}{0031899X}
+    \field{number}{7-8}
+    \field{pages}{460\bibrangedash 474}
+    \field{title}{{Nuclear induction}}
+    \field{volume}{70}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Bloch/Bloch{\_}194
+    \verb 6{\_}Nuclear induction.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{year}{1946}
+  \endentry
+
+  \entry{Castner1962}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CTG}{%
+         family={Castner},
+         familyi={C\bibinitperiod},
+         given={T.\bibnamedelima G.},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CTG1}
+    \strng{fullhash}{CTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.8.13
+    \endverb
+    \field{issn}{00319007}
+    \field{number}{1}
+    \field{pages}{13\bibrangedash 15}
+    \field{title}{{Direct measurement of the valley-orbit splitting of shallow
+  donors in silicon}}
+    \field{volume}{8}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Castner/Castner{\_
+    \verb }1962{\_}Direct measurement of the valley-orbit splitting of shallow
+    \verb donors in silicon.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{year}{1962}
+  \endentry
+
+  \entry{Feher1959}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FG}{%
+         family={Feher},
+         familyi={F\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FG1}
+    \strng{fullhash}{FG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    The different relaxation processes that connect the four energy levels in
+  phosphorus doped silicon have been investigated experimentally. The
+  relaxation time Ts ($\Delta$ms=±1, $\Delta$mI=0) was found to be independent
+  of phosphorus concentration below ∼1016 P/cm3. Its value at 3200 oersteds
+  and 1.25°K was ∼3×10+3 seconds and varied as 1/T for
+  1.3°K{\textless}T{\textless}2°K and as 1/T7 for
+  2.5°K{\textless}T{\textless}4.2°K. The magnetic field dependence in the 1/T
+  region suggests a direct phonon process. In the 1/T7 region Ts was
+  independent of the magnetic field between 3000 and 8000 oersteds. Above a
+  concentration of 1016 P/cm3 Ts varied rapidly with donor concentration,
+  dropping to 10-4 seconds at 3×1017 P/cm3. In this concentration dependent
+  region Ts was independent of the magnetic field but depended on the number of
+  acceptors present. None of the Ts mechanisms can at present be accounted for
+  by the theories of Pines, Bardeen, and Slichter, and Abrahams. The relaxation
+  time Tx ($\Delta$ms=±1, $\Delta$mI=∓1) was ∼30 hours at 3000 oersteds
+  and ∼5 hours at 8000 oersteds in fair agreement with the theory of PBS. The
+  relaxation time TN ($\Delta$mI=±1, $\Delta$ms=0) at 1.25°K exceeded 10
+  hours.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.114.1219
+    \endverb
+    \field{isbn}{0031-899X$\backslash$n1536-6065}
+    \field{issn}{0031899X}
+    \field{number}{5}
+    \field{pages}{1219\bibrangedash 1244}
+    \field{title}{{Electron spin resonance experiments on donors in silicon. I.
+  Electronic structure of donors by the electron nuclear double resonance
+  technique}}
+    \field{volume}{114}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Feher/Feher{\_}195
+    \verb 9{\_}Electron spin resonance experiments on donors in silicon. I. Ele
+    \verb ctronic structure of donors by the electron nuclear double re.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{year}{1959}
+  \endentry
+
+  \entry{Gere1959}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GE}{%
+         family={Gere},
+         familyi={G\bibinitperiod},
+         given={E},
+         giveni={E},
+      }}%
+      {{hash=FG}{%
+         family={Feher},
+         familyi={F\bibinitperiod},
+         given={G},
+         giveni={G},
+      }}%
+    }
+    \strng{namehash}{GEFG1}
+    \strng{fullhash}{GEFG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The diRerent relaxation processes that connect the four energy levels in
+  phosphorus doped silicon have been investigated experi- mentally. The
+  relaxation time T, (Am, ={\&}1,Amr=0) was found to be independent of
+  phosphorus concentration below {\~{}}10'6 P/cm'. Its value at 3200 oersteds
+  and 1.25'K was {\~{}}3X10+' seconds and varied as 1/T for 1.3'K{\&}T{\&}2'K
+  and as 1/T' for 2.5'K{\&}T{\&}4.2'K. The magnetic field dependence in the 1/T
+  region suggests a direct phonon process. In the 1/T' region T, was
+  independent of the magnetic field between 3000 and 8000 oersteds. Above a
+  concentration of 10"P/cm' 1;varied rapidly with donor concentration, dropping
+  to 10 4 seconds at 3X10"P/cm'. In this concentration dependent region T. was
+  independent of the mag- netic field but depended on the number of acceptors
+  present. None of the T, mechanisms can at present be accounted for by the
+  theories of Pines, Bardeen, and Slichter, and Abrahams. The relaxation time
+  T, (rim. ={\&}1,nmr={\&}l) was 30 hours at 3000 oersteds and 5 hours at 8000
+  oersteds in fair agreement with the theory of PBS.The relaxation time Tz (d
+  znl =+1,Am, =0) at 1.25'K exceeded 10 hours. The eRect of light was
+  investigated with a monochromator for 0.5 ev{\&}h{\~{}}{\&}2 ev. The number
+  of carriers introduced by light was obtained from the Hall coeKcient. In a
+  sample with 7{\&}{\&}10'5 P/cm', T, was reduced to 25 seconds by 2X10'
+  electrons/cm'. Under the same conditions the spin-spin time T„wasreduced to
+  1 second. The bottleneck in the T„-spin exchange mechanism sug- gested by
+  PBS is the spin-lattice relaxation time of the free carriers. This bottleneck
+  is absent in a double spin exchange mechanism suggested by Anderson and is
+  responsible for the observed T„process. A resonant spin-spin interaction
+  was observed between the electron bound to an iron impurity and the
+  phosphorus donor electron when the magnetic Geld at which the two resonance
+  lines overlap was traversed. The application of this "mixing" eRect to a
+  nuclear polarization scheme is discussed. A complete mixing of two levels was
+  also observed in phosphorus doped silicon at a magnetic field of 40 oersteds.
+  A spin diRusion process capable of transmitting a spin excitation to diRerent
+  parts of the resonance line was observed in arsenic doped silicon. This
+  process proceeds in discrete steps with fre- quencies determined by the
+  diRerent Larmor frequencies of the Si" nuclei situated at various lattice
+  sites relative to the donor atom.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRev.114.1245
+    \endverb
+    \field{issn}{0031899X}
+    \field{number}{5}
+    \field{pages}{1245}
+    \field{title}{{Electron Spin Resonance Experiments on Donors in Silicon.
+  II. Electron Spin Relaxation Effects}}
+    \field{volume}{114}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Gere, Feher/Gere,
+    \verb Feher{\_}1959{\_}Electron Spin Resonance Experiments on Donors in Sil
+    \verb icon. II. Electron Spin Relaxation Effects.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{year}{1959}
+  \endentry
+
+  \entry{hahn1950}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HEL}{%
+         family={Hahn},
+         familyi={H\bibinitperiod},
+         given={E.\bibnamedelima L.},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HEL1}
+    \strng{fullhash}{HEL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{4}
+    \field{pages}{580\bibrangedash 594}
+    \field{title}{{Spin Echoes}}
+    \field{volume}{80}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Hahn/Hahn{\_}1950{
+    \verb \_}Spin Echoes.pdf:pdf
+    \endverb
+    \field{journaltitle}{Physical Review}
+    \field{year}{1950}
+  \endentry
+
+  \entry{landlifquantmech}{book}{}
+    \name{author}{2}{}{%
+      {{hash=LL}{%
+         family={Landau},
+         familyi={L\bibinitperiod},
+         given={L.D.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Lifshitz},
+         familyi={L\bibinitperiod},
+         given={E.M.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Butterworth Heinemann}%
+    }
+    \strng{namehash}{LLLE1}
+    \strng{fullhash}{LLLE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{{Quantum Mechanics}}
+    \list{location}{1}{%
+      {Oxford}%
+    }
+    \field{year}{1958}
+  \endentry
+
+  \entry{Nielsen:2011:QCQ:1972505}{book}{}
+    \name{author}{2}{}{%
+      {{hash=NMA}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Michael\bibnamedelima A},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CIL}{%
+         family={Chuang},
+         familyi={C\bibinitperiod},
+         given={Isaac\bibnamedelima L},
+         giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{NMACIL1}
+    \strng{fullhash}{NMACIL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{edition}{10th}
+    \field{isbn}{1107002176, 9781107002173}
+    \field{title}{{Quantum Computation and Quantum Information: 10th
+  Anniversary Edition}}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{year}{2011}
+  \endentry
+
+  \entry{OGorman2014}{article}{}
+    \name{author}{5}{}{%
+      {{hash=OJ}{%
+         family={O'Gorman},
+         familyi={O\bibinitperiod},
+         given={Joe},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NNH}{%
+         family={Nickerson},
+         familyi={N\bibinitperiod},
+         given={Naomi\bibnamedelima H},
+         giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ross},
+         familyi={R\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MJJL}{%
+         family={Morton},
+         familyi={M\bibinitperiod},
+         given={John J\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+      {{hash=BSC}{%
+         family={Benjamin},
+         familyi={B\bibinitperiod},
+         given={Simon\bibnamedelima C},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OJ+1}
+    \strng{fullhash}{OJNNHRPMJJLBSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    We study the feasibility of a novel solid-state device engineered from
+  first principles for surface code quantum computing. Quantum information is
+  stored within an array of well-separated impurity spins in a lattice. A
+  second set of `probe' spins are mechanically separate from the data qubits
+  and move in-and-out of their proximity. The spin dipole-dipole interactions
+  give rise to phase shifts; measuring a probe's total phase reveals the
+  collective parity of the data qubits along the probe's path. We introduce a
+  protocol to balance the systematic errors due to the spins being imperfectly
+  located during device construction. Detailed simulations show that the
+  surface code's threshold then corresponds to misalignments that are
+  substantial on the scale of the device, indicating that it is very robust. We
+  conclude that this simple `orbital probe' architecture overcomes many of the
+  difficulties facing solid state computing, while minimising the complexity
+  and offering qubit densities that are several orders of magnitude greater
+  than other systems.%
+    }
+    \verb{doi}
+    \verb 10.1038/npjqi.2015.19
+    \endverb
+    \verb{eprint}
+    \verb 1406.5149
+    \endverb
+    \field{issn}{2056-6387}
+    \field{number}{October 2015}
+    \field{pages}{1\bibrangedash 11}
+    \field{title}{{A silicon-based surface code quantum computer}}
+    \field{volume}{1}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/O'Gorman et al/O'G
+    \verb orman et al.{\_}2014{\_}A silicon-based surface code quantum computer
+    \verb .pdf:pdf
+    \endverb
+    \field{journaltitle}{arXiv}
+    \field{eprinttype}{arXiv}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Orbach1961}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OR}{%
+         family={Orbach},
+         familyi={O\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OR1}
+    \strng{fullhash}{OR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    A spin-Hamiltonian approach to the theory of spin-lattice relaxation in
+  paramagnetic salts is developed in which the orbit-lattice interaction is
+  treated as a perturbation connecting states of the overall spin-Hamiltonian.
+  The approach is much simpler than previous treatments where the spin-orbit
+  and Zeeman effects were treated as perturbations. and is appliciable to a
+  wide range of salts including both the iron group and the rare earth group.
+  It is found that, for Kramers salts (ions with an odd number of electrons),
+  many previous results apply quite generally, regardless of the relative size
+  of the spin-orbit and crystalline field terms, buut there are important
+  exceptations. For the case of large crystalline field splitting, the
+  relaxation rate (inverse of the relaxation time T1) varsus as H{\^{}}4T and
+  T{\^{}}9 for direct and Raman process respectively, as van Vleck has
+  previously shown. The so-called Van Vleck cancellation leading to these
+  dependence is dirived in a very simple and quite general manner. For small
+  crystal field splittings $\Delta$, less than, or of the order of, the lattice
+  Debye temperature, the relaxation rate varies as H-4T and
+  aexp(-$\Delta$/kT)+bT{\^{}}9 for direct and Raman processes prspectively. The
+  two coefficients a and b are such that the T{\^{}}9 term is important only at
+  low temperatures where the exponential term is quite small. These results are
+  in marked contrast with earlier theories.%
+    }
+    \verb{doi}
+    \verb 10.1088/0370-1328/77/4/301
+    \endverb
+    \field{issn}{0370-1328}
+    \field{number}{4}
+    \field{pages}{821\bibrangedash 826}
+    \field{title}{{On the Theory of Spin-Lattice Relaxation in Paramagnetic
+  Salts}}
+    \field{volume}{77}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Orbach/Orbach{\_}1
+    \verb 961{\_}On the Theory of Spin-Lattice Relaxation in Paramagnetic Salts
+    \verb .pdf:pdf
+    \endverb
+    \field{journaltitle}{Proceedings of the Physical Society}
+    \field{year}{1961}
+  \endentry
+
+  \entry{Schweiger}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Schweiger},
+         familyi={S\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{Principles of Pulse Electron Paramagnetic Resonance}}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Schweiger/Schweige
+    \verb r{\_}Unknown{\_}Principles of Pulse Electron Paramagnetic Resonance.p
+    \verb df:pdf
+    \endverb
+  \endentry
+
+  \entry{Wolfowicz2016a}{article}{}
+    \name{author}{7}{}{%
+      {{hash=WG}{%
+         family={Wolfowicz},
+         familyi={W\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MPA}{%
+         family={Mortemousque},
+         familyi={M\bibinitperiod},
+         given={Pierre\bibnamedelima Andr{\'{e}}},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Guichard},
+         familyi={G\bibinitperiod},
+         given={Roland},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Simmons},
+         familyi={S\bibinitperiod},
+         given={Stephanie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TMLW}{%
+         family={Thewalt},
+         familyi={T\bibinitperiod},
+         given={Mike L\bibnamedelima W},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+      }}%
+      {{hash=IKM}{%
+         family={Itoh},
+         familyi={I\bibinitperiod},
+         given={Kohei\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MJJL}{%
+         family={Morton},
+         familyi={M\bibinitperiod},
+         given={John J\bibnamedelima L},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \keyw{decoherence,donors in silicon,nuclear spins,quantum error correction}
+    \strng{namehash}{WG+1}
+    \strng{fullhash}{WGMPAGRSSTMLWIKMMJJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Nuclear spin registers in the vicinity of electron spins in solid state
+  systems offer a powerful resource to address the challenge of scalability in
+  quantum architectures. We investigate here the properties of
+  {\$}{\^{}}{\{}29{\}}{\$}Si nuclear spins surrounding donor atoms in silicon,
+  and consider the use of such spins, combined with the donor nuclear spin, as
+  a quantum register coupled to the donor electron spin. We find the coherence
+  of the nearby {\$}{\^{}}{\{}29{\}}{\$}Si nuclear spins is effectively
+  protected by the presence of the donor electron spin, leading to coherence
+  times in the second timescale - over two orders of magnitude greater than the
+  coherence times in bulk silicon. We theoretically investigate the use of such
+  a register for quantum error correction, including methods to protect nuclear
+  spins from the ionisation/neutralisation of the donor, which is necessary for
+  the re-initialisation of the ancillae qubits. This provides a route for
+  multi-round quantum error correction using donors in silicon.%
+    }
+    \verb{doi}
+    \verb 10.1088/1367-2630/18/2/023021
+    \endverb
+    \verb{eprint}
+    \verb 1505.02057
+    \endverb
+    \field{issn}{13672630}
+    \field{number}{2}
+    \field{pages}{23021}
+    \field{title}{{29Si nuclear spins as a resource for donor spin qubits in
+  silicon}}
+    \field{volume}{18}
+    \verb{file}
+    \verb :Users/davidwise/Google Drive/UCL/Mendeley Library/Wolfowicz et al/Wo
+    \verb lfowicz et al.{\_}2016{\_}29Si nuclear spins as a resource for donor
+    \verb spin qubits in silicon.pdf:pdf
+    \endverb
+    \field{journaltitle}{New Journal of Physics}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+  \endentry
+
+  \entry{10003989896}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZE}{%
+         family={Zavoisky},
+         familyi={Z\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZE1}
+    \strng{fullhash}{ZE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{pages}{211\bibrangedash 245}
+    \field{title}{{Spin-magnetic resonance in paramagnetics}}
+    \verb{url}
+    \verb http://ci.nii.ac.jp/naid/10003989896/en/
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{J Phys USSR}
+    \field{year}{1945}
+  \endentry
+\enddatalist
+\endinput

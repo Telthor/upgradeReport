@@ -1,0 +1,11 @@
+{
+  "projectPath": "/Users/davidwise/Google Drive/UCL/PhD_1/Upgrade/Report",
+  "title": "LaTeX-Plus Project",
+  "root": "Text_Files/results.tex",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}
